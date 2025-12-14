@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom tiny styles */
+.container { @apply max-w-6xl mx-auto px-4; }
+.card { @apply rounded-2xl shadow p-6 bg-white; }
+.link { @apply underline underline-offset-4 hover:no-underline; }
+.btn { @apply inline-flex items-center gap-2 rounded-2xl px-5 py-3 font-medium shadow hover:shadow-md transition; }
+.btn-primary { @apply bg-gray-900 text-white; }
+.text-muted { @apply text-gray-600; }
+/* --- Enhancements --- */
+:root { color-scheme: light dark; }
+html.dark body { @apply bg-gray-900 text-gray-100; }
+html.dark .card { @apply bg-gray-800 text-gray-100; }
+html.dark .text-muted { @apply text-gray-300; }
+
+.section-title { @apply text-3xl md:text-4xl font-bold tracking-tight; }
+.badge { @apply inline-block text-xs px-2 py-1 rounded-full border; }
+.feature { @apply card transition hover:-translate-y-0.5 hover:shadow-lg; }
+.glow { box-shadow: 0 0 40px rgba(59,130,246,.25); }
+
+.btn-ghost { @apply rounded-2xl px-4 py-2 hover:bg-gray-100; }
+html.dark .btn-ghost { @apply hover:bg-gray-700; }
+
+.hero { @apply rounded-3xl p-8 md:p-12 relative overflow-hidden; }
+.hero:before {
+  content: ""; position: absolute; inset: -20% -10% auto -10%;
+  height: 60%; filter: blur(60px); opacity:.5;
+  background: radial-gradient(40% 60% at 30% 40%, #60a5fa 0%, transparent 60%),
+              radial-gradient(40% 60% at 70% 60%, #34d399 0%, transparent 60%);
+}

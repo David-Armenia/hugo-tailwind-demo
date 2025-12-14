@@ -1,0 +1,85 @@
+{{ define "main" }}
+
+<section class="hero bg-white dark:bg-gray-800 glow">
+  <div class="relative z-10 grid md:grid-cols-2 gap-8 items-center">
+    <div class="space-y-5">
+      <h1 class="section-title">Hugo + Tailwind: быстрые правки и чистые шаблоны</h1>
+      <p class="text-lg text-muted">
+        Опыт: layouts/partials, адаптивные компоненты, SEO-мета, JSON-LD, оптимизация Lighthouse.
+      </p>
+      <div class="flex gap-3">
+        <a href="#portfolio" class="btn btn-primary">Смотреть кейсы</a>
+        <a href="https://github.com" class="btn">Исходники</a>
+      </div>
+    </div>
+    <div class="card">
+      <p class="badge">Возможности</p>
+      <ul class="list-disc pl-5 mt-3 space-y-2 text-muted">
+        <li>Чистая структура: baseof + partials</li>
+        <li>PostCSS + Autoprefixer через Hugo Pipes</li>
+        <li>OpenGraph + JSON-LD</li>
+        <li>Тёмная тема и плавные hover-эффекты</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="mt-14 grid md:grid-cols-3 gap-6">
+  <div class="feature">
+    <h3 class="font-semibold text-lg mb-2">Доработка шаблонов</h3>
+    <p class="text-muted">Layouts, partials, конфиги, переиспользуемые блоки.</p>
+  </div>
+  <div class="feature">
+    <h3 class="font-semibold text-lg mb-2">Компоненты Tailwind</h3>
+    <p class="text-muted">Сетки, карточки, хедеры/футеры, формы, модалки.</p>
+  </div>
+  <div class="feature">
+    <h3 class="font-semibold text-lg mb-2">SEO & Разметка</h3>
+    <p class="text-muted">Мета, OpenGraph, JSON-LD, улучшение Lighthouse.</p>
+  </div>
+</section>
+
+<section id="portfolio" class="mt-16">
+  <h2 class="section-title mb-6">Кейсы</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <article class="card">
+      <h3 class="font-semibold">Лендинг на Hugo + Tailwind</h3>
+      <p class="text-muted mt-2">Редизайн хедера/футера, schema.org, 95+ Lighthouse.</p>
+    </article>
+    <article class="card">
+      <h3 class="font-semibold">Шаблоны статей</h3>
+      <p class="text-muted mt-2">Чистые partials, переиспользуемые блоки, удобная структура.</p>
+    </article>
+    <article class="card">
+      <h3 class="font-semibold">SEO-оптимизация</h3>
+      <p class="text-muted mt-2">OpenGraph, JSON-LD, title/description, sitemap/robots.</p>
+    </article>
+  </div>
+</section>
+
+<section id="testimonials" class="mt-16">
+  <h2 class="section-title mb-6">Отзывы</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    <blockquote class="card">
+      <p>«Быстро внедрил правки, аккуратно оформил partials и улучшил скорость загрузки»</p>
+      <footer class="text-sm text-muted mt-3">— Клиент из IT-сферы</footer>
+    </blockquote>
+    <blockquote class="card">
+      <p>«Сделал понятный SEO-набор: мета, OpenGraph, JSON-LD. Плюс приятная тёмная тема»</p>
+      <footer class="text-sm text-muted mt-3">— Владелец сайта</footer>
+    </blockquote>
+  </div>
+</section>
+
+<section id="contacts" class="mt-16 card">
+  <h2 class="section-title mb-4">Связаться</h2>
+  <ul class="space-y-2 text-muted">
+    <li><strong>Email:</strong> <a href="mailto:davidkarapetyan461@gmail.com" class="link">davidkarapetyan461@gmail.com</a></li>
+    <li><strong>Телефон:</strong> <a href="tel:+37443118863" class="link">+37443118863</a></li>
+  </ul>
+  <div class="mt-6">
+    <a href="mailto:davidkarapetyan461@gmail.com" class="btn btn-primary">Написать на email</a>
+  </div>
+</section>
+
+{{ end }}
