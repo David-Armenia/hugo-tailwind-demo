@@ -1,6 +1,6 @@
 baseURL = "https://David-Armenia.github.io/hugo-tailwind-demo/"
 languageCode = "ru-ru"
-title = "Hugo Tailwind Demo"
+title = "David Karapetyan — Hugo Tailwind"
 disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404"]
 enableRobotsTXT = true
 [outputs]
